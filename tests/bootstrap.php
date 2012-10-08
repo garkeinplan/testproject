@@ -10,7 +10,9 @@ function loader($class)
 	var_dump (file_exists('/home/travis/builds/garkeinplan/testproject/tests/' . $file));
 	echo "\n";
 	echo "--------------------------\n";
-	print_r ($_SERVER);
+	echo getcwd () . "\n\n";
+	chdir('tests');
+	echo getcwd () . "\n\n";
 	echo "--------------------------\n\n";
 	echo "\n";
     if (file_exists($file)) {
