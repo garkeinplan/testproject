@@ -2,7 +2,7 @@
 
 function loader($class)
 {
-    $file = $class . '.php';
+    $file = './' .$class . '.php';
 	echo $file . "\n";
 	
 	var_dump (file_exists($file));
