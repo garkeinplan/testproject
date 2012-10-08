@@ -2,10 +2,12 @@
 
 function loader($class)
 {
-    $file = './tests/' .$class . '.php';
+    $file = $class . '.php';
 	echo $file . "\n";
 	
 	var_dump (file_exists($file));
+	echo "\n";
+	var_dump (file_exists('/home/travis/builds/garkeinplan/testproject/tests/' . $file));
 	echo "\n";
 	echo "--------------------------\n";
 	print_r ($_SERVER);
