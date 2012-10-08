@@ -10,6 +10,7 @@ function loader($class)
 	echo "--------------------------\n";
 	print_r ($_SERVER);
 	echo "--------------------------\n\n";
+	echo "\n";
     if (file_exists($file)) {
 		echo "require $file \n";
         require $file;
